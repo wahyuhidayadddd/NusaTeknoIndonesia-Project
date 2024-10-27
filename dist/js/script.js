@@ -18,3 +18,18 @@ hamburger.addEventListener('click', function () {
   hamburger.classList.toggle('hamburger-active');
   navMenu.classList.toggle('hidden');
 });
+const dropdown = document.getElementById('dropdown');
+const layananLink = document.querySelector('.group');
+
+layananLink.addEventListener('mouseenter', () => {
+    dropdown.classList.add('active'); // Tampilkan dropdown saat mouse masuk
+});
+
+layananLink.addEventListener('mouseleave', () => {
+    dropdown.classList.remove('active'); // Sembunyikan dropdown saat mouse keluar
+});
+
+// Menyembunyikan dropdown jika mouse keluar dari dropdown
+dropdown.addEventListener('mouseleave', () => {
+    dropdown.classList.remove('active'); // Sembunyikan dropdown saat mouse keluar dari dropdown
+});
