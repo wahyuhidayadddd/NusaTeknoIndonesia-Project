@@ -1498,4 +1498,45 @@ video {
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
+  /* Default styles for light mode */
+body.light-mode {
+  background-color: white; /* Light background for body */
+  color: black; /* Dark text for body */
+}
+
+header {
+  background-color: white; /* Light background for header */
+  color: black; /* Dark text for header */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212; /* Dark background for body */
+  color: white; /* Light text for body */
+}
+
+header {
+  background-color: #1e1e1e; /* Dark background for header */
+  color: white; /* Light text for header */
+}
+
+/* Navbar link styles */
+nav a {
+  color: black; /* Default link color in light mode */
+}
+
+body.dark-mode nav a {
+  color: white; /* Link color in dark mode */
+}
+
+nav a:hover {
+  color: #007BFF; /* Change color on hover in light mode */
+}
+
+body.dark-mode nav a:hover {
+  color: #4DA3FF; /* Change color on hover in dark mode */
+}
+
+/* Adjust any other elements as needed */
+
 }
